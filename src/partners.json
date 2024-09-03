@@ -1,0 +1,42 @@
+{
+  "partnersList": [
+    {
+      "partnerId": 0,
+      "partnerName": "Fever",
+      "partnerImage": "src/assets/images/general/fever-logo.svg",
+      "partnerUrl": "https://feverup.com/es"
+    },
+    {
+      "partnerId": 1,
+      "partnerName": "Lays",
+      "partnerImage": "src/assets/images/partners/lays.png",
+      "partnerUrl": "https://www.lays.es/"
+    },
+    {
+      "partnerId": 2,
+      "partnerName": "Glovo",
+      "partnerImage": "src/assets/images/partners/glovo.png",
+      "partnerUrl": "https://glovoapp.com/es/es/"
+    },
+    {
+      "partnerId": 3,
+      "partnerName": "kfc",
+      "partnerImage": "src/assets/images/partners/kfc.png",
+      "partnerUrl": "https://global.kfc.com/"
+    },
+    {
+      "partnerId": 4,
+      "partnerName": "Kit Kat",
+      "partnerImage": "src/assets/images/partners/kitkat.png",
+      "partnerUrl": "https://www.kitkat.com/"
+    },
+    {
+      "partnerId": 5,
+      "partnerName": "Stella Artois",
+      "partnerImage": "src/assets/images/partners/stella.png",
+      "partnerUrl": "https://www.stellaartois.com/"
+    }
+  ]
+}
+
+

@@ -1,0 +1,88 @@
+@import 'header';
+@import 'hero';
+@import 'menu';
+@import 'location';
+@import 'partners';
+@import 'footer';
+@import 'shoppingCart';
+
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: $scroll-offset;
+
+}
+
+@include respond-to(mobile) {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: $scroll-offset + 60px;
+
+  }
+}
+
+body {
+  margin: 0px !important;
+  background-image: none;
+  background-color: $c-white;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+
+h2 {
+  font-family: $f-marcheile;
+}
+
+p {
+  font-family: $f-montserrat;
+}
+
+.btn-white,
+.btn-blue {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s ease, box-shadow 0.3s ease;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  max-width: 150px;
+  text-align: center;
+  animation: pulse 1.5s infinite;
+}
+
+.btn-white {
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+
+.btn-blue {
+  color: #fff;
+  background-color: $c-fever-blue-primary;
+}
+
+.btn-white:hover,
+.btn-blue:hover {
+  background-color: darken($c-fever-blue-primary, 10%);
+  transform: scale(1.1);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.4);
+  }
+}
+

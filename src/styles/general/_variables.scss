@@ -1,0 +1,38 @@
+// Colors
+$c-fever-blue-primary: #225193;
+$c-fever-blue-second: #479cd5;
+$c-fever-yellow: #ffdb00;
+$c-fever-orange: #FD9C14;
+$c-fever-blue-dark: #06232c;
+$c-fever-blue-light: #364550;
+$c-fever-blue-gradient: linear-gradient(0deg, rgba(83,101,113,1) 0%, rgba(54,69,80,1) 100%);
+$c-black: #252525;
+$c-white: #fff;
+$c-white-off: #efefef;
+$c-fever-orange-darkened: darken($c-fever-orange, 10%);
+
+
+// Typography
+$f-montserrat: "Montserrat", sans-serif;
+$f-roboto: "Roboto", sans-serif;
+$f-marcheile: "Marcheile", sans-serif;
+
+
+// Media queries
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == mobile {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+  @if $breakpoint == mobileXS {
+    @media (max-width: 567px) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop {
+    @media (min-width: 769px) {
+      @content;
+    }
+  }
+}

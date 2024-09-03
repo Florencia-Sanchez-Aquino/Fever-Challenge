@@ -1,0 +1,242 @@
+$header-height: 110px;
+$scroll-offset: 110px;
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    .header-info {
+        background-color: $c-fever-blue-second;
+        text-align: end;
+        height: 30px;
+        margin-top: -16px;
+
+        p {
+            color: $c-white;
+            font-size: 1rem;
+            font-weight: 700;
+            padding: 5px 25px 5px 0px;
+            margin-bottom: 0px;
+            white-space: nowrap;
+            animation: moveText 20s linear infinite;
+        }
+    }
+
+    .container-navbar {
+        display: flex;
+        justify-content: center;
+        background-color: $c-fever-orange;
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 100px;
+            max-width: 1200px;
+            position: relative;
+
+            .logo {
+                padding: 5px 20px;
+
+                img {
+                    max-width: 85px;
+                }
+            }
+
+            .navbar-links {
+                ul {
+                    display: flex;
+                    list-style: none;
+                    padding-left: 0;
+
+                    li {
+                        margin: 0 20px;
+                        position: relative; // Asegura que el efecto se alinee correctamente
+
+                        a {
+                            font-size: 1rem;
+                            color: $c-white-off;
+                            text-decoration: none;
+                            font-family: $f-montserrat;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                            transition: transform 0.3s ease, text-shadow 0.3s ease; // Agrega transición para el hover
+                            display: inline-block; // Asegura que el enlace se expanda correctamente
+                        }
+
+                        &:hover a {
+                            transform: scale(1.1); // Agranda el enlace un 10% cuando se hace hover en el li
+                            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); // Agrega una sombra al texto
+                        }
+                    }
+                }
+            }
+
+            .header-buttom {
+                display: flex;
+                align-items: center;
+                justify-content: end;
+
+                padding: 5px 10px;
+                background-color: transparent;
+                border-radius: 20px;
+
+                img {
+                    max-width: 50px;
+                    margin-right: 8px;
+                    transition: transform 0.3s ease;
+
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+
+                }
+
+                span {
+                    width: 18px;
+                    height: 20px;
+                    text-align: center;
+                    border: 1px solid hsla(11, 100%, 52.2%, 1);
+                    background-color: hsla(11, 100%, 52.2%, 1);
+                    border-radius: 50%;
+                    padding: 4px 8px;
+                    color: white;
+                    font-size: 1rem;
+                    margin-left: 30px;
+                    margin-top: -70px;
+                    z-index: 11;
+                    position: fixed;
+                    font-family: $f-montserrat;
+                    transition: transform 0.3s ease;
+                    font-weight: 700;
+                }
+
+                .notification {
+                    position: fixed;
+                    top: 120px;
+                    right: 10%;
+                    font-family: $f-montserrat;
+                    font-weight: 700;
+                    background-color: $c-fever-blue-second;
+                    color: $c-white;
+                    padding: 10px 20px;
+                    border-radius: 5px;
+                    font-size: 14px;
+                    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                    z-index: 1000;
+                    opacity: 0;
+                    transition: opacity 0.5s ease-in-out;
+
+                }
+            }
+
+            .menu-toggle {
+                display: none;
+
+                img {
+                    max-width: 40px;
+                }
+            }
+        }
+    }
+
+    @include respond-to(mobile) {
+        .container-navbar {
+            nav {
+                height: 80px;
+
+                .logo {
+                    img {
+                        max-width: 70px;
+                    }
+                }
+
+                .navbar-links {
+                    display: none;
+                    position: absolute;
+                    top: $header-height - 30px;
+                    right: 0;
+                    background-color: $c-fever-blue-primary;
+                    width: 100%;
+                    text-align: center;
+                    z-index: 10;
+                    transition: max-height 0.3s ease;
+                    overflow: hidden;
+                    animation: slideIn 0.3s ease-out;
+
+                    ul {
+                        display: block;
+                        padding: 0;
+                        margin: 0;
+
+                        li {
+                            margin: 15px 0;
+                        }
+                    }
+                }
+
+                .menu-toggle {
+                    display: block;
+                    transition: transform 0.3s ease;
+                    margin-right: 30px;
+
+                    img {
+                        transition: transform 0.3s ease;
+                    }
+                }
+
+                .header-buttom {
+                    display: flex;
+                    justify-content: flex-end;
+                    padding-right: 0px;
+
+                    img {
+                        margin-right: -20px;
+                        max-width: 45px !important;
+                    }
+
+                    span {
+                        width: 14px;
+                        height: 18px;
+                    }
+
+                    .notification {
+                        right: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar-links.active {
+        display: block !important;
+        max-height: 500px;
+    }
+}
+
+@keyframes moveText {
+    0% {
+        transform: translateX(30%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

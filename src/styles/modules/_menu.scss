@@ -1,0 +1,180 @@
+#menu {
+    
+    background-color: $c-fever-orange;
+    @include respond-to(mobile) {
+        padding: 60px 20px 80px;
+    }
+
+    .menu-title {
+        color: $c-white;
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .menu-description {
+        color: $c-white;
+        text-align: center;
+        font-weight: 500;
+        border: 2px solid $c-white;
+        max-width: 750px;
+        padding: 10px;
+        margin: 10px auto 30px;
+        font-size: 1rem;
+    }
+
+
+    // Estilo de los productos
+    #cart {
+        max-width: 100%;
+        display: grid;
+        gap: 30px;
+
+        @include respond-to(desktop) {
+            grid-template-columns: repeat(3, 1fr); // 3 columnas en desktop
+            max-width: 1200px;
+            margin: auto;
+
+        }
+
+        @include respond-to(mobile) {
+            grid-template-columns: repeat(2, 1fr); // 2 columnas en móvil
+            gap: 10px;
+        }
+
+        @include respond-to(mobileXS) {
+            grid-template-columns: repeat(1, 1fr); // 1 columnas en móvilXS
+            gap: 10px;
+        }
+
+        .cart-content {
+            background-color: $c-white;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            position: relative;
+            text-align: center;
+
+
+            img {
+                width: 100%;
+                height: 250px;
+                object-fit: cover;
+                transition: transform 0.3s ease;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+
+            .cart-titulo {
+                font-family: $f-montserrat;
+                color: $c-fever-blue-primary;
+                margin: 10px 20px 10px;
+                font-size: 1.5rem;
+            }
+
+            .cart-description {
+                font-family: $f-roboto;
+                color: $c-fever-blue-light;
+                margin: 0px 20px;
+                height: 55px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                font-size: 0.9rem;
+                overflow-y: hidden;
+                max-height: 150px;
+                overflow-y: auto;
+                padding-right: 10px;
+                scrollbar-width: thin;
+                scrollbar-color: $c-fever-blue-second transparent;
+
+                &::-webkit-scrollbar {
+                    width: 0;
+                    height: 0;
+                }
+
+                &::-webkit-scrollbar-thumb {
+                    background-color: $c-fever-blue-second;
+                    border-radius: 5px;
+                }
+
+                &::-webkit-scrollbar-track {
+                    background-color: transparent;
+                }
+            }
+
+            .cart-precio {
+                font-family: $f-montserrat;
+                color: $c-fever-blue-primary;
+                margin: 20px 0px;
+                text-align: center;
+                font-size: 1.5rem;
+            }
+
+            .price-discounted {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 5px 0px;
+
+                .cart-price-old {
+                    text-decoration: line-through;
+                    text-decoration-thickness: 3px;
+                    color: hsl(11deg, 100%, 52.2%);
+                    ;
+                    font-weight: 700;
+                    font-size: 1rem;
+                    position: relative;
+
+                    &::after {
+                        content: ' OFF';
+                        font-size: 0.8rem;
+                        color: hsl(11deg, 100%, 52.2%);
+                        ;
+                        position: absolute;
+                        top: 0;
+                        right: -30px;
+                    }
+                }
+
+                .cart-precio-oferta {
+                    font-family: $f-montserrat;
+                    color: $c-fever-blue-primary;
+                    margin: 10px;
+                    font-size: 1.5rem;
+                    margin-left: 40px;
+
+                }
+            }
+
+            .btn-shop {
+                display: block;
+                background-color: $c-fever-blue-primary;
+                color: $c-white;
+                border: none;
+                padding: 20px 15px;
+                font-family: $f-montserrat;
+                cursor: pointer;
+                width: 100%;
+                border-radius: 0px;
+                font-size: 1rem;
+                font-weight: 700;
+                transition: background-color 0.3s ease, transform 0.3s ease;
+
+                &:hover {
+                    background-color: $c-fever-blue-second;
+                    transform: scale(1.05);
+                }
+            }
+
+            .borde-producto {
+                border-top: 1px solid $c-fever-blue-light;
+                margin: 10px 0;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Los Pollos Hermanos</title>
+</head>
+
+<body>
+  <header>
+    <section class="header-info">
+      <p>Shake Up Your Day! Enjoy 20% Off All Milkshakes This Month Only!</p>
+    </section>
+    <section class="container-navbar">
+      <nav>
+        <a href="#" class="logo">
+          <img src="./src/assets/images/header/lph-logo.png" alt="Logo">
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="#info">Info</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#location">Location</a></li>
+          </ul>
+        </div>
+        <!-- Shopping Cart -->
+        <div class="header-buttom">
+          <div id="btnShoppingCart">
+            <img src="./src/assets/images/header/carrito.png" alt="Carrito">
+            <span id="quantityShoppingCart"></span>
+            <div id="notification" class="notification">
+              A new product has been added
+            </div>
+          </div>
+        </div>
+        <a href="#" id="menuToggle" class="menu-toggle">
+          <img src="./src/assets/images/header/menu.png" alt="Menu">
+        </a>
+      </nav>
+    </section>
+  </header>
+
+  <div class="main-content">
+    <section id="info" class="hero">
+      <div class="video-container">
+        <video src="src/assets/videos/hero-video.mp4" autoplay muted loop playsinline></video>
+        <div class="overlay">
+          <h2>Order fried chicken now</h2>
+          <p>Get famous chicken however you want it.</p>
+          <a href="#menu" class="btn-blue">Order now</a>
+        </div>
+      </div>
+    </section>
+    <section id="menu">
+      <h2 class="menu-title">Menu</h2>
+      <p class="menu-description">Menu varies by location. Please contact your local restaurant
+        to verify menu availability.</p>
+      <div id="cart">
+      </div>
+
+      <div id="modal-shoppingCart" class="modal-shoppingCart"></div>
+
+    </section>
+
+    <section id="location">
+      <div class="two-blocks-section">
+        <div class="block block-image">
+          <img src="src/assets/images/location/location-img.jpg" alt="Descripción de la imagen">
+        </div>
+        <div class="block block-text">
+          <h2 class="menu-title">New Los Pollos Hermanos restaurant in Madrid!</h2>
+          <p>The first establishment in Spain to incorporate the new
+            company image. The restaurants sporting the new image
+            have been warmly welcomed by the public, with growth
+            above 30% in those premises with the new Los Pollos
+            Hermanos identity.
+            Los Pollos Hermanos, flagship brand of Eat Out restoration
+            group, announced the opening its first restaurant in Madrid, at
+            <b> Puerta de Alcalá.</b>
+          </p>
+          <a href="https://maps.app.goo.gl/uSvgEMHy1KFx7tcq8" target="_blank" class="btn-white">Get directions</a>
+
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="responsive-iframe-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d759.3863202510491!2d-3.6891200000000013!3d40.418923199999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42289b8d392581%3A0x32bfed1206105c2b!2sC.%20de%20Valenzuela%2C%204%2C%20Retiro%2C%2028014%20Madrid%2C%20Espa%C3%B1a!5e0!3m2!1ses!2sar!4v1725248581339!5m2!1ses!2sar"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+
+    <section class="partners-section">
+      <h2 class="partners-title">Partners</h2>
+
+      <div class="event-by">
+        <p class="organizer-text">Event by:</p>
+        <div class="logo-container">
+          <img src="src/assets/images/header/lph-logo.png" alt="LPH Logo" class="lph-logo">
+        </div>
+      </div>
+      <div id="partners"></div>
+    </section>
+
+
+    <footer class="footer">
+      <p>&copy; 2022 LPH / Los Pollos Hermanos. All Rights Reserved. Los Pollos Hermanos is an original license. <a
+          href="#privacy-modal" class="privacy-policy" id="privacy-link">Privacy policy</a></p>
+    </footer>
+
+    <!-- Modal Section -->
+    <div id="privacy-modal" class="modalTyC">
+      <div class="modal-content-tyc">
+        <span class="close">&times;</span>
+        <h2>Privacy Policy</h2>
+        <div class="privacy-policy-container">
+          <section class="privacy-policy-content">
+            <h2>Introduction</h2>
+            <p>Welcome to Los Pollos Hermanos. We value your privacy and are committed to protecting your personal
+              information. This Privacy Policy outlines how we collect, use, and safeguard your data.</p>
+
+            <h2>Information We Collect</h2>
+            <p>We collect information that you provide directly to us, such as your name, email address, and order
+              details. We may also collect information automatically through cookies and other tracking technologies.
+            </p>
+
+            <h2>How We Use Your Information</h2>
+            <p>We use your information to process orders, improve our services, and communicate with you. We may also
+              use your data for marketing purposes, with your consent.</p>
+
+            <h2>Data Security</h2>
+            <p>We implement appropriate security measures to protect your personal information from unauthorized access,
+              alteration, or disclosure.</p>
+
+            <h2>Changes to This Policy</h2>
+            <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an
+              updated revision date.</p>
+
+            <h2>Contact Us</h2>
+            <p>If you have any questions about this Privacy Policy or our data practices, please contact us at
+              support@lospolloshermanos.com.</p>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Do not edit below this line -->
+
+
+  <script type="module" src="./src/main.js"></script>
+  <script type="module" src="./src/navbar.js"></script>
+  <script type="module" src="./src/modal-footer.js"></script>
+
+</body>
+
+</html>

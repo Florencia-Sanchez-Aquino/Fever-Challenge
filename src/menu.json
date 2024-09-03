@@ -1,0 +1,70 @@
+{
+  "developerHints": {
+    "forbidden": [
+      "Do not edit this \"developerHints\" property",
+      "Do not move this json file from this location"
+    ],
+    "allowed": [
+      "You can edit \"menuList\" property as you like",
+      "It is not necessary, but you can add more properties if you need it"
+    ]
+  },
+  "menuList": [
+    {
+      "menuId": 0,
+      "menuName": "Chicken Burger",
+      "menuDescription": "We placed 70 years of delicious into this sandwich. Taste our legendary hand-battered chicken.",
+      "menuPrice": 10.00,
+      "menuImage": "src/assets/images/gastro/gastro-item-chicken-burger.jpg",
+      "menuDiscount": 0.0,
+      "menuQuantity": 1
+    },
+    {
+      "menuId": 1,
+      "menuName": "Chicken wings",
+      "menuDescription": "Get your fill with the Texas-Sized Meal: 3PC Legs & Thighs, 2 regular sides plus a signature jalapeño pepper.",
+      "menuPrice": 9.00,
+      "menuImage": "src/assets/images/gastro/gastro-item-chicken-wings.jpg",
+      "menuDiscount": 0.0,
+      "menuQuantity": 1
+    },
+    {
+      "menuId": 2,
+      "menuName": "Beer",
+      "menuDescription": "Just simple and fresh beer.",
+      "menuPrice": 2.20,
+      "menuImage": "src/assets/images/gastro/gastro-item-beer.jpg",
+      "menuDiscount": 0.0,
+      "menuQuantity": 1
+    },
+    {
+      "menuId": 3,
+      "menuName": "French fries",
+      "menuDescription": "Our fries are extra-long and center-cut from Grade A potatoes. They are cooked to a golden-brown crisp while remaining slightly soft in the middle. Every batch is cooked to order in our premium quality Canola Oil blend, then lightly salted immediately after leaving the fryer, so the taste melts onto each fry.",
+      "menuPrice": 12.00,
+      "menuImage": "src/assets/images/gastro/gastro-item-french-fries.jpg",
+      "menuDiscount": 0.0,
+      "menuQuantity": 1
+    },
+    {
+      "menuId": 4,
+      "menuName": "Milshake",
+      "menuDescription": "Our creamy Milkshakes are hand-spun the old-fashioned way each time and feature delicious. Topped with whipped cream and a cherry (except when served via delivery).",
+      "menuPrice": 1.80,
+      "menuImage": "src/assets/images/gastro/gastro-item-milkshake.jpg",
+      "menuDiscount": 0.2,
+      "menuQuantity": 1
+    },
+    {
+      "menuId": 5,
+      "menuName": "Fried chicken",
+      "menuDescription": "We use premium chicken breast tenderloins to make the most tender chicken fingers possible. Our special marinade tenderizes the chicken, locks in moisture and adds flavor.",
+      "menuPrice": 8.00,
+      "menuImage": "src/assets/images/gastro/gastro-item-fried-chicken.jpg",
+      "menuDiscount": 0.0,
+      "menuQuantity": 1
+    }
+  ]
+}
+
+
