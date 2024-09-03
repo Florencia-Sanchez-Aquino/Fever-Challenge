@@ -72,7 +72,7 @@ $max-width-modal-mobile: 90%;
   margin: auto;
   font-family: $f-montserrat;
   place-content: stretch;
-  max-width: $max-width-modal-mobile;
+  max-width: $max-width-modal;
 
 
   img {
@@ -155,13 +155,14 @@ $max-width-modal-mobile: 90%;
   }
 
   @include respond-to(mobile) {
+    
     flex-direction: column;
     align-items: flex-start;
     text-align: center;
     display: list-item;
 
     img {
-      max-width: 300px;
+      max-width: 90%;
       border-radius: 20px;
     }
 
@@ -188,6 +189,9 @@ $max-width-modal-mobile: 90%;
     .cart-header-total {
       display: none;
     }
+  }
+  @include respond-to(mobile) {
+    max-width: $max-width-modal-mobile;
   }
 }
 

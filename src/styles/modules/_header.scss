@@ -168,6 +168,7 @@ header {
                     transition: max-height 0.3s ease;
                     overflow: hidden;
                     animation: slideIn 0.3s ease-out;
+                    z-index: 999999999;
 
                     ul {
                         display: block;
@@ -176,6 +177,7 @@ header {
 
                         li {
                             margin: 15px 0;
+                            width: 100%;
                         }
                     }
                 }
@@ -206,7 +208,8 @@ header {
                     }
 
                     .notification {
-                        right: 20px;
+                        top:100px;
+                        right: 0px;
                     }
                 }
             }

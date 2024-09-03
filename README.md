@@ -17,20 +17,20 @@ We are delighted to start working with you and we would like you to do some task
 ---
 
 ## What will "Los Pollos Hermanos" have on it is website? (required)
-- [ ] Must have a spectacular, nice and clean design. (We want to attract as many customers as possible).
-- [ ] Must have a **header** with navigation menu.
-- [ ] Must have a **hero** with a video or image. (We can use it to highlight the best of us!).
-- [ ] Must have a **menu** section with our gastronomic offer.
-- [ ] Must have a **location** section with an iframe map and information on where to find us. Also, include a CTA that when pressed opens Google Maps at the location of the restaurant.
-- [ ] Must have a **partners** section with a list of all our partners.
-- [ ] Must have a **footer** with copyright information.
-- [ ] Must be fully responsive. (We know that our customers access mostly from their smartphone, so we want to make things easier for them. The worst case scenario must be Iphone SE).
+- [X] Must have a spectacular, nice and clean design. (We want to attract as many customers as possible).
+- [X] Must have a **header** with navigation menu.
+- [X] Must have a **hero** with a video or image. (We can use it to highlight the best of us!).
+- [X] Must have a **menu** section with our gastronomic offer.
+- [X] Must have a **location** section with an iframe map and information on where to find us. Also, include a CTA that when pressed opens Google Maps at the location of the restaurant.
+- [X] Must have a **partners** section with a list of all our partners.
+- [X] Must have a **footer** with copyright information.
+- [X] Must be fully responsive. (We know that our customers access mostly from their smartphone, so we want to make things easier for them. The worst case scenario must be Iphone SE).
 
 ---
 
 ## What would be ideal for "Los Pollos Hermanos" to have on its website? (optional)
 
-- [ ] People don't want tricks! They want to know what their food is going to cost them. It would be ideal to have a simple "menu" calculator that allows customers to modify the quantities of these products. **Keep in mind that 21% VAT is applied to all products and that just this month there is a 20% discount on milkshakes**!
+- [X] People don't want tricks! They want to know what their food is going to cost them. It would be ideal to have a simple "menu" calculator that allows customers to modify the quantities of these products. **Keep in mind that 21% VAT is applied to all products and that just this month there is a 20% discount on milkshakes**!
 
 | Price by unit | Product         |
 |---------------|---------------- |
